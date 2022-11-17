@@ -7,13 +7,56 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  background-color: #404040;
+/* -------------------------------- */
+
+.site-container {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product {
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+.product-info {
   padding: 1rem;
 }
 
-header a {
-  color: #fff;
-  border-width: bold;
-  text-decoration: none;
+.addTask {
+  padding: 2em;
+  width: 50vw;
+  margin: auto;
+}
+input,
+button {
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+}
+form input {
+  margin: 0;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+span {
+  color: rgb(255, 0, 0);
 }
